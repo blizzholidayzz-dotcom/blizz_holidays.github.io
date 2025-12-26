@@ -3,13 +3,12 @@ import { Plane, MapPin } from 'lucide-react';
 export default function Hero() {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <video
+      <iframe
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="https://youtube.com/shorts/rSY5d2wgV5c?si=2733h5ChpWJDg8Fe"
-        autoPlay
-        loop
-        muted
-      />
+        src="https://www.youtube.com/embed/rSY5d2wgV5c?autoplay=1&mute=1&loop=1&playlist=rSY5d2wgV5c&controls=0&showinfo=0&modestbranding=1&autohide=1"
+        frameBorder="0"
+        allow="autoplay; encrypted-media"
+      ></iframe>
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
