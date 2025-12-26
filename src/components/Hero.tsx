@@ -1,14 +1,40 @@
+'''import { useState, useEffect } from 'react';
 import { Plane, MapPin } from 'lucide-react';
 
+const videos = [
+  'https://www.youtube.com/embed/rSY5d2wgV5c?autoplay=1&mute=1&loop=1&playlist=rSY5d2wgV5c&controls=0&showinfo=0&modestbranding=1&autohide=1',
+  'https://www.youtube.com/embed/iUtnZpzkbG8?autoplay=1&mute=1&loop=1&playlist=iUtnZpzkbG8&controls=0&showinfo=0&modestbranding=1&autohide=1',
+];
+
 export default function Hero() {
+  const [currentVideo, setCurrentVideo] = useState(0);
+  const [isFading, setIsFading] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsFading(true);
+      setTimeout(() => {
+        setCurrentVideo((prevVideo) => (prevVideo + 1) % videos.length);
+        setIsFading(false);
+      }, 1000);
+    }, 5000); 
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <iframe
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        src="https://www.youtube.com/embed/rSY5d2wgV5c?autoplay=1&mute=1&loop=1&playlist=rSY5d2wgV5c&controls=0&showinfo=0&modestbranding=1&autohide=1"
-        frameBorder="0"
-        allow="autoplay; encrypted-media"
-      ></iframe>
+      {videos.map((video, index) => (
+        <iframe
+          key={video}
+          className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
+            index === currentVideo && !isFading ? 'opacity-100' : 'opacity-0'
+          }`}
+          src={video}
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+        ></iframe>
+      ))}
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
@@ -66,3 +92,4 @@ export default function Hero() {
     </div>
   );
 }
+''
