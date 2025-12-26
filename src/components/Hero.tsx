@@ -20,7 +20,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div className="relative h-screen w-screen flex items-center justify-center overflow-hidden">
       {videos.map((videoSrc, index) => (
         <video
           key={videoSrc}
@@ -40,15 +40,15 @@ export default function Hero() {
           <img
             src="/1.jpeg"
             alt="Blizz Holidayz Logo"
-            className="h-32 w-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300"
+            className="h-24 sm:h-32 w-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300"
           />
         </div>
 
-        <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 animate-fade-in-up">
+        <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold text-white mb-6 animate-fade-in-up">
           BLIZZ HOLIDAYZ
         </h1>
 
-        <p className="text-2xl md:text-4xl text-white mb-8 animate-fade-in-up animation-delay-200 font-light italic">
+        <p className="text-xl sm:text-2xl md:text-4xl text-white mb-8 animate-fade-in-up animation-delay-200 font-light italic">
           let's travel with us
         </p>
 
