@@ -23,7 +23,7 @@ export default function Hero() {
     <div className="relative h-screen w-screen flex items-center justify-center overflow-hidden">
       {videos.map((videoSrc, index) => (
         <video
-          key={videoSrc}
+          key={videoSrc + index}
           className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
             index === currentVideo && !isFading ? 'opacity-100' : 'opacity-0'
           }`}
