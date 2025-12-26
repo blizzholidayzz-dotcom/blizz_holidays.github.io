@@ -1,4 +1,4 @@
-'''import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Plane, MapPin } from 'lucide-react';
 
 const videos = [
@@ -14,7 +14,7 @@ export default function Hero() {
     const interval = setInterval(() => {
       setIsFading(true);
       setTimeout(() => {
-        setCurrentVideo((prevVideo) => (prevVideo + 1) % videos.length);
+        setCurrentVideo((prevVideo: number) => (prevVideo + 1) % videos.length);
         setIsFading(false);
       }, 1000);
     }, 5000); 
@@ -92,4 +92,3 @@ export default function Hero() {
     </div>
   );
 }
-''
