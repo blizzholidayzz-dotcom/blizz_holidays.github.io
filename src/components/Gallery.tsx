@@ -1,4 +1,3 @@
-import Image from 'next/image';
 
 const images = [
   { src: '/1.jpeg', alt: 'Blizz Holidayz Image 1' },
@@ -14,12 +13,10 @@ export default function Gallery() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {images.map((image, index) => (
             <div key={index} className="relative h-80 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <Image
+              <img
                 src={image.src}
                 alt={image.alt}
-                layout="fill"
-                objectFit="cover"
-                className="transform hover:scale-110 transition-transform duration-300"
+                className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300"
               />
             </div>
           ))}

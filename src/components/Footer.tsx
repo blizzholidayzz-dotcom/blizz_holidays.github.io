@@ -103,7 +103,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="#youtube"
+                href="https://youtube.com/@blizzboyz?si=AB7fcUW7vC8OwrAM"
                 className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group"
               >
                 <div className="w-10 h-10 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
