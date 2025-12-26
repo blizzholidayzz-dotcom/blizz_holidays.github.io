@@ -5,32 +5,28 @@ const videos = ['/video1.mp4', '/video2.mp4'];
 
 export default function Hero() {
   const [currentVideo, setCurrentVideo] = useState(0);
-  const [isFading, setIsFading] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIsFading(true);
-      setTimeout(() => {
-        setCurrentVideo((prevVideo) => (prevVideo + 1) % videos.length);
-        setIsFading(false);
-      }, 1000); // Fade duration
-    }, 10000); // Time per video (10 seconds)
+    const timer = setTimeout(() => {
+      setCurrentVideo((prevVideo) => (prevVideo + 1) % videos.length);
+    }, 10000); // Switch video every 10 seconds
 
-    return () => clearInterval(interval);
-  }, []);
+    return () => clearTimeout(timer);
+  }, [currentVideo]);
 
   return (
     <div className="relative h-screen w-screen flex items-center justify-center overflow-hidden">
       {videos.map((videoSrc, index) => (
         <video
-          key={videoSrc + index}
+          key={videoSrc}
           className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
-            index === currentVideo && !isFading ? 'opacity-100' : 'opacity-0'
+            index === currentVideo ? 'opacity-100' : 'opacity-0'
           }`}
           src={videoSrc}
           autoPlay
           muted
           loop
+          playsInline // Add this for better mobile compatibility
         />
       ))}
       <div className="absolute inset-0 bg-black opacity-50"></div>
