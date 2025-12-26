@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="/bg-video.mp4"
+        src="./bg-video.mp4"
         autoPlay
         loop
         muted
