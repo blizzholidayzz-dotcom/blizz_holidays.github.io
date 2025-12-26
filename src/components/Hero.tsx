@@ -3,13 +3,14 @@ import { Plane, MapPin } from 'lucide-react';
 export default function Hero() {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-red-500 to-orange-500 opacity-90"></div>
-
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-        <div className="absolute top-40 right-10 w-72 h-72 bg-red-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-orange-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-      </div>
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        src="/bg-video.mp4"
+        autoPlay
+        loop
+        muted
+      />
+      <div className="absolute inset-0 bg-black opacity-50"></div>
 
       <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
         <div className="mb-8 flex justify-center">
