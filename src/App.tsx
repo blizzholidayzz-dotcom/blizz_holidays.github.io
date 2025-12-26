@@ -2,6 +2,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import BusinessCard from './components/BusinessCard';
 import Gallery from './components/Gallery';
+import GoogleReview from './components/GoogleReview';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Services />
       <Gallery />
+      <GoogleReview />
       <BusinessCard />
       <Contact />
       <Footer />
