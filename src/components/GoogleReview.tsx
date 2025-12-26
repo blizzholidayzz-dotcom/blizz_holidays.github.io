@@ -11,7 +11,7 @@ export default function GoogleReview() {
         <h2 className="text-4xl font-bold text-gray-800 mb-4">Enjoying our service?</h2>
         <p className="text-lg text-gray-600 mb-8">Leave us a review on Google!</p>
         <div className="flex justify-center mb-8">
-          {[...Array(5)].map((star, index) => {
+          {[...Array(5)].map((_, index) => {
             index += 1;
             return (
               <button
