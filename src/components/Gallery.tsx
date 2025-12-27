@@ -4,10 +4,10 @@ const images = [
   { src: '/3.jpeg', alt: 'Blizz Holidayz Image 2' },
   { src: '/4.jpeg', alt: 'Blizz Holidayz Image 3' },
   { src: '/5.jpeg', alt: 'Blizz Holidayz Image 4' },
-  { src: '/6.jpeg', alt: 'Blizz Holidayz Image 1' },
-  { src: '/7.jpeg', alt: 'Blizz Holidayz Image 2' },
-  { src: '/8.jpeg', alt: 'Blizz Holidayz Image 1' },
-  { src: '/9.jpeg', alt: 'Blizz Holidayz Image 2' },
+  { src: '/6.jpeg', alt: 'Blizz Holidayz Image 5' },
+  { src: '/7.jpeg', alt: 'Blizz Holidayz Image 6' },
+  { src: '/8.jpeg', alt: 'Blizz Holidayz Image 7' },
+  { src: '/9.jpeg', alt: 'Blizz Holidayz Image 8' },
 ];
 
 export default function Gallery() {
