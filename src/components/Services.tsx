@@ -1,11 +1,11 @@
-import { Plane, Hotel, Mountain, Camera, Map, Compass } from 'lucide-react';
+import { Hotel, Mountain, Camera, Map, Compass, Heart } from 'lucide-react';
 
 const services = [
   {
-    icon: Plane,
-    title: 'Flight Booking',
-    description: 'Best deals on domestic and international flights',
-    color: 'from-blue-500 to-blue-600',
+    icon: Heart,
+    title: 'Devotional Tours',
+    description: 'Spiritual journeys to sacred places',
+    color: 'from-yellow-500 to-yellow-600',
   },
   {
     icon: Hotel,
