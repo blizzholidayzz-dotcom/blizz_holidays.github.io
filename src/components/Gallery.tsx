@@ -1,13 +1,13 @@
 
 const images = [
-  { src: '/1.jpeg', alt: 'Blizz Holidayz Image 1' },
-  { src: '/s.jpeg', alt: 'Blizz Holidayz Image 2' },
-  { src: '/1.jpeg', alt: 'Blizz Holidayz Image 1' },
-  { src: '/s.jpeg', alt: 'Blizz Holidayz Image 2' },
-  { src: '/1.jpeg', alt: 'Blizz Holidayz Image 1' },
-  { src: '/s.jpeg', alt: 'Blizz Holidayz Image 2' },
-  { src: '/1.jpeg', alt: 'Blizz Holidayz Image 1' },
-  { src: '/s.jpeg', alt: 'Blizz Holidayz Image 2' },
+  { src: '/2.jpeg', alt: 'Blizz Holidayz Image 1' },
+  { src: '/3.jpeg', alt: 'Blizz Holidayz Image 2' },
+  { src: '/4.jpeg', alt: 'Blizz Holidayz Image 3' },
+  { src: '/5.jpeg', alt: 'Blizz Holidayz Image 4' },
+  { src: '/6.jpeg', alt: 'Blizz Holidayz Image 1' },
+  { src: '/7.jpeg', alt: 'Blizz Holidayz Image 2' },
+  { src: '/8.jpeg', alt: 'Blizz Holidayz Image 1' },
+  { src: '/9.jpeg', alt: 'Blizz Holidayz Image 2' },
 ];
 
 export default function Gallery() {
