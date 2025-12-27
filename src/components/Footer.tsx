@@ -135,7 +135,7 @@ export default function Footer() {
               {currentYear} Blizz Holidayz. All rights reserved.
             </p>
             <p className="text-gray-400 flex items-center gap-2">
-              Made with <Heart className="w-4 h-4 text-red-500 fill-current animate-pulse" /> for travelers
+              Made with  dev_kong <Heart className="w-4 h-4 text-red-500 fill-current animate-pulse" /> for travelers
             </p>
           </div>
         </div>
